@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- <add key="webpages:Enabled" value="true" /> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Quote Generator</title>
     <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com">
     
     <!-- Old Favicon - Grab Icon From Google (Might be unsupported in the future) -->
@@ -13,8 +14,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="quote-container" id="quote-container">
+        <!-- Quote element -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left">
+                <span id="quote"> </span>
+            </i>
+        </div>
+        <!-- Author  -->
+        <div class="quote-author">
+            <span id="author"></span>
+        </div>
 
-    <h1>Hello World</h1>
+        <!-- Button -->
+        <div class="button-container">
+            <button class="twitter-button" id="twitter" title="Tweet!">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button class="new-quote" id="new-quote">New Quote</button>
+        </div>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+
+    <div class="footer" id="footer">
+        <span>Made by Om Kajave</span>
+    </div>
+
+
     <!-- Script -->
     <script src="script.js"></script>
 </body>
